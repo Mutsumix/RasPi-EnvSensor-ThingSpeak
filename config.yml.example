@@ -1,0 +1,12 @@
+# ThingSpeak設定
+thingspeak:
+  api_key: "YOUR_THINGSPEAK_WRITE_API_KEY"  # ThingSpeakのWrite API Key
+
+# センサー設定
+sensor:
+  scheduler:
+    # データ送信の間隔（分）
+    interval_minutes: 60
+  omron:
+    use: True
+    port: "/dev/ttyUSB0"  # センサーのシリアルポート（環境に合わせて変更してください）
